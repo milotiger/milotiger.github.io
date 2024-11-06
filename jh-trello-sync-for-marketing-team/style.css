@@ -1,0 +1,64 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+.priceContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.priceContainer input {
+  /*width: 100px;*/
+}
+
+.priceContainer button {
+  margin-top: 0;
+  height: 35px;
+  margin-left: 10px;
+}
+
+#estimate {
+  margin: 0;
+}
+
+.checkBoxContainer {
+  /*display: flex;*/
+  /*flex-direction: row;*/
+}
+
+.checkBoxContainer > label > div {
+  text-align: center;
+}
+
+.checkBoxContainer > label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40px;
+}
+
+.checkboxesContainer{
+  display: flex;
+  justify-content: space-around;
+  margin-top: -10px;
+}
+
+.setting-item-container .setting-label {
+  display: inline-block;
+}
+
+.dropdownContainer select {
+  width: 100%;
+}
+
+form {
+  margin: 0;
+}

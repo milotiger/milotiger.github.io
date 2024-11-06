@@ -1,0 +1,50 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://p.trellocdn.com/power-up.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    select { height: 30px; }
+  </style>
+  <script src="https://p.trellocdn.com/power-up.min.js"></script>
+</head>
+<body>
+<form id="syncSelector" style="padding-top: 15px;">
+
+  <div class="checkboxesContainer">
+    <span>Sync This Card</span>
+    <input type="checkbox" name="syncCard" value="true" id="syncCard" />
+  </div>
+
+  <!--Todo: need button to reload the boards-->
+  <div class="dropdownContainer">
+    <label for="board-selector">
+      Select a board:
+      <span><a href="#" onclick="reloadBoardList()">Refresh boards list...</a></span>
+    </label>
+
+    <select name="board" id="board-selector" disabled >
+      <option value="" disabled selected>fetching boards...</option>
+    </select>
+  </div>
+
+  <div class="dropdownContainer">
+    <label for="list-selector">Select a list:</label>
+    <select name="list" id="list-selector" disabled >
+      <option value="" disabled selected>select board first...</option>
+    </select>
+  </div>
+
+  <div>
+    <button type="submit" class="mod-primary" id="button">Save</button>
+  </div>
+
+</form>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="https://api.trello.com/1/client.js?key=5c37dc171dd75043548820cf9b9ae930"></script>
+<script src="./api.js"></script>
+<script src="./jh_sync_card_buttons.js"></script>
+</body>
+</html>
