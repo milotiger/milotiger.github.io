@@ -1,12 +1,7 @@
-const appInfo = {
-  appKey: '5c37dc171dd75043548820cf9b9ae930',
-  appName: 'Journey Horizon Trello App'
-};
 
 // const serverUrl = window.TrelloPowerUp.util.relativeUrl().split('/public')[0];
-
 const getServerUrl = () => {
-  return window.TrelloPowerUp.util.relativeUrl().split('/public')[0];
+  return serverUrl;
 };
 
 const makeTrelloRequest = async ({ url, method = 'GET', data, token }) => {
